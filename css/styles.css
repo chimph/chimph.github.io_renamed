@@ -94,13 +94,18 @@ li {
     margin-top: 76px;
     height:520px;
     background-size: cover;
-    background-image: url('../img/sardines111.jpg');
+    background-image: url('../img/sardines11.webp');
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    /* text-shadow: 3px 3px black; */
+
 }
+
+
+
 
 #screen {
     width:100%
