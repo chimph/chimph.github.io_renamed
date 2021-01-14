@@ -28,9 +28,9 @@ a:hover {
 
 }
 
-#menupdf {
+/* #menupdf {
 	margin-top: 76px;
-}
+} */
 
 img {
 
@@ -133,7 +133,7 @@ li {
     /* flex:100%;
     max-width: 100%; */
     margin-top: 76px;
-    height:550px;
+    height:520px;
     background-size: cover;
     background-image: url('../img/sardines1.jpg');
     /* overflow: hidden; */
