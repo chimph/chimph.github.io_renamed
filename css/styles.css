@@ -1,0 +1,258 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+
+/*MAIN*/
+body { 
+	margin: 0;
+	font-size: 1.3em;
+	line-height: 1.25em;
+	font-family: Helvetica Neue, Helvetica, Arial;
+	background-color: rgb(85, 129, 158);
+	
+}
+a {
+
+	color: rgb(85, 129, 158);
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+* {
+	box-sizing: border-box;
+  }
+
+a:hover {
+
+	color: #444;
+
+}
+
+#menupdf {
+	margin-top: 76px;
+}
+
+img {
+
+	width: 100%;
+
+}
+
+header {
+
+	background: #fff;
+	width: 100%;
+	height: 76px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 4px solid rgb(85, 129, 158);
+	z-index: 1;
+}
+
+.footer {
+	position: fixed;
+	height: 50px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	border-top: 6px solid rgb(85, 129, 158);
+	color: black;
+	text-align: center;
+  }
+
+#logo{
+
+	margin: 20px;
+	float: left;
+	width: 200px;
+	height: 40px;
+	background: url(../img/HAUKAI.png) no-repeat center;
+	display: block;
+
+}
+
+.bg-image {
+	height: 100%;
+	width: 100%;
+	
+	
+}
+
+.bg-image-sardines {
+	background-image: url(../img/sardines1.jpg);
+	background-size: cover;
+}
+
+nav {
+
+	float: right;
+	padding: 20px;	
+	
+}
+
+#menu-icon {
+
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: rgb(85, 129, 158) url(../img/menu-icon.png) center;
+
+}
+
+a:hover#menu-icon {
+
+	background-color: #444;
+	border-radius: 4px 4px 0 0;
+
+}
+
+ul {
+
+	list-style: none;
+
+}
+
+li {
+
+	display: inline-block;
+	/* float: left; */
+	padding: 10px
+
+}
+
+.current {
+
+	color: black;
+
+}
+
+.container {
+	height:700px;
+	margin-top: 82;
+}
+
+
+#screen {
+    width:100%
+}
+
+
+
+
+.centered {
+	position: absolute;
+	margin-top: 200px;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
+.center-bottom {
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
+
+h1 {
+	font-size: 1.5em;
+	color: white;
+	margin: -4px 0 ;
+	margin-left: 40px;
+	text-shadow: 3px 3px black;
+	
+	
+
+}
+
+p {
+
+	line-height: 1.45em;
+	margin-bottom: 20px;
+
+}
+
+.row {
+	
+	display: flex;
+	
+	flex-wrap: wrap;
+	padding: 0 5px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+	
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+  }
+  
+  .column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+  }
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 840px) {
+
+	/* .column {
+	  -ms-flex: 100%;
+	  flex: 100%;
+	  max-width: 100%;
+	} */
+  
+	.column {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	  }
+
+	header {
+
+		position: absolute;
+
+	}
+
+	#menu-icon {
+
+		display:inline-block;
+
+	}
+
+	nav ul, nav:active ul { 
+
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #fff;
+		border: 5px solid #444;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 4px 0 4px 4px;
+		z-index: 1;
+
+	}
+
+	nav li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+
+	nav:hover ul {
+
+		display: block;
+
+	}
+
+
+}
