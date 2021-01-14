@@ -73,7 +73,7 @@ header {
 
 }
 
-.bg-image {
+/* .bg-image {
 	height: 100%;
 	width: 100%;
 	
@@ -83,7 +83,7 @@ header {
 .bg-image-sardines {
 	background-image: url();
 	background-size: cover;
-}
+} */
 
 nav {
 
@@ -132,6 +132,7 @@ li {
 
     /* flex:100%;
     max-width: 100%; */
+    margin-top: 76px;
     height:600px;
     background-size: cover;
     background-image: url('../img/sardines1.jpg');
@@ -139,6 +140,9 @@ li {
     background-repeat: no-repeat;
     background-position: center;
     /* background-size: auto 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center
 	
 }
 
@@ -152,18 +156,19 @@ li {
 
 .centered {
 	position: absolute;
-	margin-top: 170px;
-	top: 20%;
+	/* margin-top: 170px;
+    top: 20%; */
+    top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
   }
 
-.center-bottom {
+/* .center-bottom {
 	position: absolute;
-	bottom: 10%;
+	bottom: 0%;
 	left: 50%;
-	transform: translate(-50%, -50%);
-	}
+	transform: translate(-50%, -30%);
+	} */
 
 h1 {
 	font-size: 1.5em;
@@ -176,12 +181,12 @@ h1 {
 
 }
 
-p {
+/* p {
 
 	line-height: 1.45em;
 	margin-bottom: 20px;
 
-}
+} */
 
 .row {
 	
