@@ -26,6 +26,19 @@ a {
     text-shadow: 1px 1px 1rem rgba(0,0,0,0.5);
 }
 
+.signin {
+	margin-top: 100px;
+	color: white; 
+}
+
+.round_top {
+	border-radius: 5px 5px 0 0;
+}
+.round_bottom {
+	border-radius: 0 0 5px 5px;
+	border-top: 0px;
+}
+
 a:hover {
 	color: #444;
 }
@@ -135,7 +148,7 @@ li {
 	transform: translate(-50%, -50%);
   }
 
-h1 {
+/* h1 {
 	font-size: 1.6em;
 	color: white;
 	margin: 6px 0 ;
@@ -144,7 +157,7 @@ h1 {
     text-shadow: 3px 3px black;
     position: absolute;
     transform: translate(-50%, -50%);
-}
+} */
 
 .hidden {
 	display: none;
