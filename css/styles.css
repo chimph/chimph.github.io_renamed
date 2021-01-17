@@ -1,11 +1,12 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
 
-body { 
+body,html { 
 	margin: 0;
 	font-size: 1.1em;
-	line-height: 1.25em;
+	line-height: 1.7em;
 	font-family: Helvetica Neue, Helvetica, Arial;
-	background-color: rgb(85, 129, 158);
+	background-color: #455a64;
+	height: 100%;
 }
 
 a {
@@ -20,10 +21,11 @@ a {
 
 .mission {
 	color: white; 
-	font-size: 1.3em;
-    padding: 70px; 
-    width: 700px;
-    text-shadow: 1px 1px 1rem rgba(0,0,0,0.5);
+	font-size: 1.4em;
+	/* margin-top: 40px; */
+    padding: 30px; 
+    width: 900px;
+    text-shadow: 1px 1px 1rempx rgba(0,0,0,0.8);
 }
 
 .signin {
@@ -39,8 +41,15 @@ a {
 	border-top: 0px;
 }
 
+.text_white {
+	color: white;
+}
+
 a:hover {
 	color: #444;
+}
+.top_margin{
+	margin-top: 95px;
 }
 
 header {
@@ -50,23 +59,33 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	border-bottom: 6px solid rgb(85, 129, 158);
+	border-bottom: 6px solid #455a64;
 	z-index: 1;
 }
 
 .footer {
 	position: fixed;
-	/* height: 50px; */
 	left: 0;
 	bottom: 0;
 	width: 100vw;
 	background-color: white;
-	border-top: 6px solid rgb(85, 129, 158);
+	border-top: 6px solid #455a64;
 	color: black;
     text-align: center;
 	padding: 8px;
 }
 
+#map {
+	margin-top: 20px;
+	height: 380px;
+}
+
+.centred_skinny {
+	max-width: 500px;
+	margin: auto;
+	padding: 12px
+
+}
 .content_left {
     float: left;
     margin-left: 30px;
@@ -100,7 +119,7 @@ nav {
 	display: hidden;
 	width: 40px;
 	height: 40px;
-	background: rgb(85, 129, 158) url(../img/menu-icon.png) center;
+	background: #455a64 url(../img/menu-icon.png) center;
 }
 
 a:hover#menu-icon {
@@ -121,6 +140,10 @@ li {
 	color: black;
 }
 
+.text_content{
+	width: 700px;
+	color: white;
+}
 .container {
     margin-top: 76px;
     height:520px;
@@ -131,10 +154,29 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-shadow: 3px 3px black; */
-
 }
 
+.container2 {
+	margin-top: 76px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full_bg {
+	margin-top: 76px;
+	margin-bottom: 80px;
+	background-image: url("../img/ocean_blur.webp");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	/* justify-content: center; */
+	
+    /* align-items: center; */
+}
 
 #screen {
     width:100%
@@ -147,16 +189,11 @@ li {
 	transform: translate(-50%, -50%);
   }
 
-/* h1 {
+ h1 {
 	font-size: 1.6em;
 	color: white;
 	margin: 6px 0 ;
-    margin-left: 50%; 
-    text-align: center;
-    text-shadow: 3px 3px black;
-    position: absolute;
-    transform: translate(-50%, -50%);
-} */
+} 
 
 .hidden {
 	display: none;
