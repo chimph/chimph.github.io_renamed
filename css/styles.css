@@ -81,7 +81,7 @@ header {
 }
 
 .centred_skinny {
-	max-width: 500px;
+	max-width: 700px;
 	margin: auto;
 	padding: 12px
 
@@ -173,9 +173,6 @@ li {
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
-	/* justify-content: center; */
-	
-    /* align-items: center; */
 }
 
 #screen {
@@ -217,7 +214,7 @@ li {
 	width: 100%;
   }
 
-/* Responsive layout to hide nav bar and add menu button as well as reduce image colums from 4 to 2 */
+/* Responsive layout to hide nav bar, add menu button, reduce image columns from 4 to 2, simplify footer and move links to burger nav*/
 @media only screen and (max-width : 860px) {
   
 .content_right{
