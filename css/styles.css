@@ -191,9 +191,12 @@ li {
 	color: white;
 	margin: 6px 0 ;
 } 
-
+/* calendar responsive to show month view*/
 .hidden {
 	display: none;
+}
+.show {
+	display: block;
 }
 
 .row {
@@ -216,6 +219,10 @@ li {
 
 /* Responsive layout to hide nav bar, add menu button, reduce image columns from 4 to 2, simplify footer and move links to burger nav*/
 @media only screen and (max-width : 860px) {
+
+	iframe {
+        max-width: 100%;
+    }
   
 .content_right{
 	display:none
@@ -226,11 +233,16 @@ li {
 } 
 
 .content_center {
-	float: center;}
+	float: center;
+}
 
-	.hidden {
-		display: block;
-	}
+/* calendar responsive to show agenda view*/
+.hidden {
+	display: block;
+}
+.show {
+	display:none;
+}
 
 	.column {
 		flex: 50%;
