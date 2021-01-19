@@ -61,7 +61,6 @@ header {
 	left: 0;
 	border-bottom: 6px solid #455a64;
 	z-index: 1;
-
 }
 
 .footer {
@@ -85,13 +84,12 @@ header {
 	max-width: 700px;
 	margin: auto;
 	padding: 12px
-
 }
+
 .content_left {
     float: left;
     margin-left: 30px;
 }
-
 
 .content_right {
     float: right;
@@ -140,7 +138,6 @@ li {
 	display: inline-block;
 	padding: 10px
 }
-
 
 .current {
 	color: black;
@@ -192,11 +189,12 @@ li {
 	transform: translate(-50%, -50%);
   }
 
- h1 {
+h1 {
 	font-size: 1.6em;
 	color: white;
 	margin: 6px 0 ;
 } 
+
 /* calendar responsive to show month view*/
 .hidden {
 	display: none;
@@ -226,67 +224,62 @@ li {
 /* Responsive layout to hide nav bar, add menu button, reduce image columns from 4 to 2, simplify footer and move links to burger nav*/
 @media only screen and (max-width : 860px) {
 
-	iframe {
-		max-width: 100%;
-		padding: 10px;
-    }
-  
-.content_right{
-	display:none
-} 
+		iframe {
+			max-width: 100%;
+			padding: 12px;
+		}
+		
+		.content_right, .content_left {
+			display:none
+		} 
 
-.content_left {
-	display: none;
-} 
+		.content_center {
+			float: center;
+		}
 
-.content_center {
-	float: center;
-}
+		/* calendar responsive to show agenda view*/
+		.hidden {
+			display: block;
+		}
+		.show {
+			display:none;
+		}
 
-/* calendar responsive to show agenda view*/
-.hidden {
-	display: block;
-}
-.show {
-	display:none;
-}
+		.column {
+			flex: 50%;
+			max-width: 50%;
+			}
 
-	.column {
-		flex: 50%;
-		max-width: 50%;
-	  }
+		header {
+			position: absolute;
+		}
 
-	header {
-		position: absolute;
-	}
+		#menu-icon {
+			display:inline-block;
+		}
 
-	#menu-icon {
-		display:inline-block;
-	}
+		nav ul, nav:active ul { 
+			display: none;
+			position: absolute;
+			padding: 20px;
+			background: #fff;
+			border: 5px solid #444;
+			right: 20px;
+			top: 60px;
+			width: 50%;
+			border-radius: 4px 0 4px 4px;
+			z-index: 1;
+		}
 
-	nav ul, nav:active ul { 
-		display: none;
-		position: absolute;
-		padding: 20px;
-		background: #fff;
-		border: 5px solid #444;
-		right: 20px;
-		top: 60px;
-		width: 50%;
-		border-radius: 4px 0 4px 4px;
-		z-index: 1;
-	}
+		nav li {
+			text-align: center;
+			width: 100%;
+			padding: 10px 0;
+			margin: 0;
+		}
 
-	nav li {
-		text-align: center;
-		width: 100%;
-		padding: 10px 0;
-		margin: 0;
-	}
-
-	nav:hover ul {
-		display: block;
-	}
-
+		nav:hover ul {
+			display: block;
+		}
 
 }
