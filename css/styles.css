@@ -28,6 +28,10 @@ a {
     text-shadow: 1px 1px 1rempx rgba(0,0,0,0.8);
 }
 
+#whiteref {
+	color: white;
+}
+
 .signin {
 	margin-top: 100px;
 	color: white; 
